@@ -1,0 +1,87 @@
+<h2>Perfil</h2>
+<p>{{titular.Nome}}
+    <span translate>seja bem-vindo(a)!</span>
+</p>
+<p><span translate="Profile.DeadlineMessage"></span> {{grupo.deadlineInscricao}}.</p>
+
+<p><span translate="Profile.MandatoryFields"></span></p>
+
+<form name="userForm"  ng-submit="submitForm(userForm.$valid)">
+    <fieldset ng-repeat="atribuido in formulario.lists['Campos definidos'] | groupBy:'atribuicao'"  ng-disabled="disableFields()">
+
+        <h3>
+            {{atribuido[0].atribuicao | translate}}
+            <div class="togglebutton" ng-if="atribuido[0].atribuicao === 'Acompanhante'">
+                <label>
+                    <span translate>Irá levar acompanhante</span>?
+                    <input type="checkbox" checked="" ng-model="titular.Wave" ng-false-value="0" ng-true-value="1">
+                </label>
+            </div>
+        </h3>
+
+        <div 
+        class="form-group" 
+        ng-repeat="campo in atribuido" 
+        ng-if="(atribuido[0].atribuicao === 'Titular') || (titular.Wave === 0 && atribuido[0].atribuicao !== 'Acompanhante') || (titular.Wave === 1 && atribuido[0].atribuicao === 'Acompanhante')" 
+        ng-class="{ 'has-error': userForm[atribuido[0].atribuicao + campo.key].$invalid }" >
+
+            <!-- label padrao para todos os campos -->
+
+            <label for="{{atribuido[0].atribuicao + campo.key}}">
+                <span ng-hide="campo.customLabel">{{campo.label}}</span>
+                <span>{{campo.customLabel}}</span>
+                <span ng-show="campo.obrigatorio">*</span>
+            </label>
+
+            <!-- campos de texto / email / tel -->
+
+            <input ng-if="(campo.type === 'text') || (campo.type === 'email') || (campo.type === 'tel') || (campo.type === 'number')"
+                type="{{campo.type}}" id="{{atribuido[0].atribuicao + campo.key}}" name="{{atribuido[0].atribuicao + campo.key}}"
+                class="form-control" maxlength="{{campo.tamanhoMaximo}}" minlength="{{campo.tamanhoMinimo}}" ui-mask-placeholder="{{campo.custom-placeholder | iif : campo.custom-placeholder : campo.placeholder}}"
+                ui-mask="{{campo.mascara}}" ng-required="campo.obrigatorio" ng-model="campo.value">
+
+            <!-- campos de select -->
+
+            <select ng-if="(campo.type === 'select')" class="form-control" name="{{atribuido[0].atribuicao + campo.key}}" id="{{atribuido[0].atribuicao + campo.key}}"
+                ng-model="campo.value" ng-options="option.value as option.name for option in campo.options" ng-required="campo.obrigatorio">
+            </select>
+
+            <!-- campos de radio -->
+            <!-- campos de radio inline -->
+
+            <div class="radio" ng-if="(campo.type === 'radio') || (campo.type === 'radio-inline') " ng-repeat="option in campo.options">
+                <label>
+                    <input type="radio" id="{{atribuido[0].atribuicao + campo.key}}" name="{{atribuido[0].atribuicao + campo.key}}" ng-model="campo.value"
+                        ng-value="option.value" ng-required="campo.obrigatorio"> {{option.name}}</label>
+            </div>
+
+            <!-- campos de booleano -->
+
+            <div class="radio" ng-if="(campo.type === 'boolean')">
+                <label>
+                    <input type="radio" id="{{atribuido[0].atribuicao + campo.key}}" name="{{atribuido[0].atribuicao + campo.key}}" ng-model="campo.value"
+                        ng-value="false" ng-required="campo.obrigatorio"> {{'Não' | translate}}
+                </label>
+            </div>
+
+            <div class="radio" ng-if="(campo.type === 'boolean')">
+                <label>
+                    <input type="radio" id="{{atribuido[0].atribuicao + campo.key}}" name="{{atribuido[0].atribuicao + campo.key}}" ng-model="campo.value"
+                        ng-value="true" ng-required="campo.obrigatorio"> {{'Sim' | translate}}
+                </label>
+            </div>
+
+            <!-- campo de data em uma string -->
+
+            <input ng-if="(campo.type === 'date-string')" type="text" name="{{atribuido[0].atribuicao + campo.key}}" id="{{atribuido[0].atribuicao + campo.key}}"
+                ui-mask-placeholder="{{campo.custom-placeholder | iif : campo.custom-placeholder : campo.placeholder}}" class="form-control"
+                ng-model="campo.value" ui-mask='99/99/9999' ng-required="campo.obrigatorio"  model-view-value="true">
+            <span class="material-icons form-control-feedback">clear</span>
+
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary" ng-disabled="submitting || userForm.$invalid" ng-show="canSubmit()"><span translate>Enviar</span></button>
+</form>
+
+<br>
+
