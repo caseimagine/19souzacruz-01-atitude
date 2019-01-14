@@ -31,18 +31,20 @@
                 <span ng-hide="campo.customLabel">{{campo.label}}</span>
                 <span>{{campo.customLabel}}</span>
                 <span ng-show="campo.obrigatorio">*</span>
+                <br>
+                <small> <em>{{campo.customPlaceholder | iif : campo.customPlaceholder : campo.placeholder}}</em></small>
             </label>
 
             <!-- campos de texto / email / tel -->
 
-            <input ng-if="(campo.type === 'text') || (campo.type === 'email') || (campo.type === 'tel') || (campo.type === 'number')"
+            <input ng-if="(campo.type === 'text' && campo.colmaSeparatedOptions === null ) || (campo.type === 'email') || (campo.type === 'tel') || (campo.type === 'number')"
                 type="{{campo.type}}" id="{{atribuido[0].atribuicao + campo.key}}" name="{{atribuido[0].atribuicao + campo.key}}"
-                class="form-control" maxlength="{{campo.tamanhoMaximo}}" minlength="{{campo.tamanhoMinimo}}" ui-mask-placeholder="{{campo.custom-placeholder | iif : campo.custom-placeholder : campo.placeholder}}"
+                class="form-control" maxlength="{{campo.tamanhoMaximo}}" minlength="{{campo.tamanhoMinimo}}" placeholder=""
                 ui-mask="{{campo.mascara}}" ng-required="campo.obrigatorio" ng-model="campo.value">
 
             <!-- campos de select -->
 
-            <select ng-if="(campo.type === 'select')" class="form-control" name="{{atribuido[0].atribuicao + campo.key}}" id="{{atribuido[0].atribuicao + campo.key}}"
+            <select ng-if="(campo.type === 'select') || (campo.type === 'text' && campo.colmaSeparatedOptions !== null)" class="form-control" name="{{atribuido[0].atribuicao + campo.key}}" id="{{atribuido[0].atribuicao + campo.key}}"
                 ng-model="campo.value" ng-options="option.value as option.name for option in campo.options" ng-required="campo.obrigatorio">
             </select>
 
@@ -74,7 +76,7 @@
             <!-- campo de data em uma string -->
 
             <input ng-if="(campo.type === 'date-string')" type="text" name="{{atribuido[0].atribuicao + campo.key}}" id="{{atribuido[0].atribuicao + campo.key}}"
-                ui-mask-placeholder="{{campo.custom-placeholder | iif : campo.custom-placeholder : campo.placeholder}}" class="form-control"
+                ui-mask-placeholder="{{campo.customPlaceholder | iif : campo.customPlaceholder : campo.placeholder}}" class="form-control"
                 ng-model="campo.value" ui-mask='99/99/9999' ng-required="campo.obrigatorio"  model-view-value="true">
             <span class="material-icons form-control-feedback">clear</span>
 
