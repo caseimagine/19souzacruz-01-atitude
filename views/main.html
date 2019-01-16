@@ -14,6 +14,7 @@
                     </h1>
                     <br />
                     <h4>Login</h4>
+
                   </div>
                   <!-- <div class="language-select text-center bg-primary" ng-controller="LanguageselectCtrl" style="padding-top: 20px; padding-bottom: 20px; color: white;">
 
@@ -35,8 +36,10 @@
                       <span class="input-group-addon">
                         <i class="material-icons">email</i>
                       </span>
-                      <input type="email" name="email" class="form-control" ng-model="main.email" placeholder="{{ 'Insira seu e-mail' | translate }}" required>
-                      <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">{{'Insira um e-mail válido' | translate}}</p>
+                      <input type="email" name="email" class="form-control" ng-model="main.email" placeholder="{{ 'Insira seu e-mail' | translate }}"
+                        required>
+                      <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">{{'Insira um
+                        e-mail válido' | translate}}</p>
                     </div>
                     <!-- inicializando o scope para senha -->
                     <div class="hidden">{{main.senha}}</div>
@@ -44,7 +47,8 @@
                       <span class="input-group-addon">
                         <i class="material-icons">lock_outline</i>
                       </span>
-                      <input type="password" name="password" class="form-control" ng-model="main.senha" placeholder="{{'Digite sua senha' | translate}}" required>
+                      <input type="password" name="password" class="form-control" ng-model="main.senha" placeholder="{{'Digite sua senha' | translate}}"
+                        required>
                     </div>
                   </div>
 
