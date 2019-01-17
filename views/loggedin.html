@@ -33,7 +33,7 @@
                 <li ng-if="rootScopeUsuario.Endereco.Uf === 'RJ' && (rootScopeUsuario.Status === -2 || rootScopeUsuario.Status === 1)">
                     <a href="#!/info-rj">Informações</a>
                 </li>
-                <li>
+                <li ng-if="!((rootScopeUsuario.Status === -2 || rootScopeUsuario.Status === 1) && rootScopeUsuario.Endereco.Uf === 'RJ')">
                     <a href="#!/profile">{{'Menu.Inscricao' | translate}}</a>
                 </li>
                 <li>
