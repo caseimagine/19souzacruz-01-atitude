@@ -1,0 +1,204 @@
+<form name="vooForm" ng-submit="adicionaVoo(vooData)">
+    <fieldset>
+
+        <h3 translate>Como será sua vinda para o evento?</h3>
+
+        <div class="form-group " ng-class="{'has-error': vooForm.VindaEvento.$invalid}">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="VindaEvento" ng-model="vooData.InExist" ng-value="true" required>
+                    {{'Voo' | translate}}</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="VindaEvento" ng-model="vooData.InExist" ng-value="false" required>
+                    {{'Transporte terrestre' | translate}}</label>
+
+            </div>
+            <span class="material-icons form-control-feedback">clear</span>
+        </div>
+
+        <div class="row" ng-if="vooData.InExist === true">
+
+            
+
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-group" ng-class="{'has-error': vooForm.InAeroportoDe.$invalid}">
+                    <label class="" for="InAeroportoDe" translate>De</label>
+                    <select class="form-control" id="InAeroportoDe" name="InAeroportoDe" ng-model="vooData.InAeroportoDe"
+                        required>
+                        <option ng-repeat="local in flightLists.airportsOrigin" ng-value="local.airportCode">
+                            {{local.airportName}}
+                        </option>
+                    </select>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-group" ng-class="{'has-error': vooForm.InAeroportoPara.$invalid}">
+                    <label class="" translate for="InAeroportoPara">Para</label>
+                    <select class="form-control" id="InAeroportoPara" name="InAeroportoPara" ng-model="vooData.InAeroportoPara"
+                        required>
+                        <option ng-repeat="local in flightLists.airportsDestination" ng-value="local.airportCode">
+                            {{local.airportName}}
+                        </option>
+                    </select>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+
+                <div class="form-group" ng-class="{'has-error': vooForm.InSaidaVoo.$invalid}">
+                    <label class="" for="InSaidaVoo">
+                        <span translate>Saída</span> *</label>
+                    <input type="datetime-local" name="InSaidaVoo" id="InSaidaVoo" class="form-control" ng-model="vooData.InSaidaVoo"
+                        required>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+
+                <div class="form-group" ng-class="{'has-error': vooForm.InChegadavooData.$invalid}">
+                    <label class="" for="InChegadaVoo">
+                        <span translate>Chegada</span> *</label>
+                    <input type="datetime-local" name="InChegadaVoo" id="InChegadaVoo" class="form-control" ng-model="vooData.InChegadaVoo"
+                        required>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row" ng-if="vooData.InExist === true">
+
+            <div class="col-xs-12 col-sm-8">
+                <div class="form-group" ng-class="{'has-error': vooForm.InCia.$invalid}">
+                    <label class="" for="InCia" translate>Companhia</label>
+                    <select class="form-control" id="InCia" name="InCia" ng-model="vooData.InCia" required>
+                        <option ng-repeat="local in flightLists.airlines" ng-value="local.airlineCode">
+                            {{local.airlineName}}
+                        </option>
+                    </select>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="form-group " ng-class="{'has-error': vooForm.InvooData.$invalid}">
+                    <label class="" for="InVoo">
+                        <span translate>Número</span> *</label>
+                    <input type="text" name="InVoo" id="InVoo" class="form-control" ng-model="vooData.InVoo" maxlength="4"
+                        required>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- volta -->
+
+        <h3 translate>Como será sua volta para o evento?</h3>
+
+        <div class="form-group " ng-class="{'has-error': vooForm.VoltaEvento.$invalid}">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="VoltaEvento" ng-model="vooData.OutExist" ng-value="true" required>
+                    {{'Voo' | translate}}</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="VoltaEvento" ng-model="vooData.OutExist" ng-value="false" required>
+                    {{'Transporte terrestre' | translate}}</label>
+
+            </div>
+            <span class="material-icons form-control-feedback">clear</span>
+        </div>
+
+        <div class="row" ng-if="vooData.OutExist === true">
+
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-group" ng-class="{'has-error': vooForm.OutAeroportoDe.$invalid}">
+                    <label class="" for="OutAeroportoDe" translate>De</label>
+                    <select class="form-control" id="OutAeroportoDe" name="OutAeroportoDe" ng-model="vooData.OutAeroportoDe"
+                        required>
+                        <option ng-repeat="local in flightLists.airportsDestination" ng-value="local.airportCode">
+                            {{local.airportName}}
+                        </option>
+                    </select>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <div class="form-group" ng-class="{'has-error': vooForm.OutAeroportoPara.$invalid}">
+                    <label class="" translate for="OutAeroportoPara">Para</label>
+                    <select class="form-control" id="OutAeroportoPara" name="OutAeroportoPara" ng-model="vooData.OutAeroportoPara"
+                        required>
+                        <option ng-repeat="local in flightLists.airportsOrigin" ng-value="local.airportCode">
+                            {{local.airportName}}
+                        </option>
+                    </select>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+
+                <div class="form-group" ng-class="{'has-error': vooForm.OutSaidaVoo.$invalid}">
+                    <label class="" for="OutSaidaVoo">
+                        <span translate>Saída</span> *</label>
+                    <input type="datetime-local" name="OutSaidaVoo" id="OutSaidaVoo" class="form-control" ng-model="vooData.OutSaidaVoo"
+                        required>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+
+                <div class="form-group" ng-class="{'has-error': vooForm.OutChegadaVoo.$invalid}">
+                    <label class="" for="OutChegadaVoo">
+                        <span translate>Chegada</span> *</label>
+                    <input type="datetime-local" name="OutChegadaVoo" id="OutChegadaVoo" class="form-control" ng-model="vooData.OutChegadaVoo"
+                        required>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row" ng-if="vooData.OutExist === true">
+
+            <div class="col-xs-12 col-sm-8">
+                <div class="form-group" ng-class="{'has-error': vooForm.OutCia.$invalid}">
+                    <label class="" for="OutCia" translate>Companhia</label>
+                    <select class="form-control" id="OutCia" name="OutCia" ng-model="vooData.OutCia" required>
+                        <option ng-repeat="local in flightLists.airlines" ng-value="local.airlineCode">
+                            {{local.airlineName}}
+                        </option>
+                    </select>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="form-group " ng-class="{'has-error': vooForm.OutVoo.$invalid}">
+                    <label class="" for="OutVoo">
+                        <span translate>Número</span> *</label>
+                    <input type="text" name="OutVoo" id="OutVoo" class="form-control" ng-model="vooData.OutVoo" maxlength="4"
+                        required>
+                    <span class="material-icons form-control-feedback">clear</span>
+                </div>
+            </div>
+
+        </div>
+
+    </fieldset>
+    <button type="submit" class="btn btn-primary"><span translate>Enviar</span></button>
+</form>

@@ -1,0 +1,908 @@
+{
+    "airlines": [
+        {
+            "airlineName": "Avianca Brasil",
+            "airlineCode": "O6"
+        },
+        {
+            "airlineName": "Azul Brazilian Airlines",
+            "airlineCode": "AD"
+        },
+        {
+            "airlineName": "GOL Linhas Aéreas Inteligentes",
+            "airlineCode": "G3"
+        },
+        {
+            "airlineName": "Passaredo Transportes Aéreos",
+            "airlineCode": "P3"
+        },
+        {
+            "airlineName": "SETE Linhas Aéreas",
+            "airlineCode": "5O"
+        },
+        {
+            "airlineName": "LATAM Airlines",
+            "airlineCode": "JJ"
+        },
+        {
+            "airlineName": "Total Linhas Aéreas",
+            "airlineCode": "TO"
+        },
+        {
+            "airlineName": "TRIP Linhas Aéreas",
+            "airlineCode": "T4"
+        },
+        {
+            "airlineName": "Aerolíneas Argentinas",
+            "airlineCode": "AR"
+        },
+        {
+            "airlineName": "Air France",
+            "airlineCode": "AF"
+        },
+        {
+            "airlineName": "Alitália",
+            "airlineCode": "AZ"
+        },
+        {
+            "airlineName": "American Airlines",
+            "airlineCode": "AA"
+        },
+        {
+            "airlineName": "British Airways",
+            "airlineCode": "BA"
+        },
+        {
+            "airlineName": "Copa Airlines",
+            "airlineCode": "CM"
+        },
+        {
+            "airlineName": "Delta Airlines",
+            "airlineCode": "DL"
+        },
+        {
+            "airlineName": "Edelweiss Air",
+            "airlineCode": "WK"
+        },
+        {
+            "airlineName": "Emirates",
+            "airlineCode": "EK"
+        },
+        {
+            "airlineName": "Iberia",
+            "airlineCode": "IB"
+        },
+        {
+            "airlineName": "KLM",
+            "airlineCode": "KL"
+        },
+        {
+            "airlineName": "Lufthansa",
+            "airlineCode": "LH"
+        },
+        {
+            "airlineName": "Paranair",
+            "airlineCode": "ZP"
+        },
+        {
+            "airlineName": "Royal Air Maroc",
+            "airlineCode": "AT"
+        },
+        {
+            "airlineName": "SKY Airline",
+            "airlineCode": "H2"
+        },
+        {
+            "airlineName": "TAAG",
+            "airlineCode": "DT"
+        },
+        {
+            "airlineName": "TAP",
+            "airlineCode": "TP"
+        },
+        {
+            "airlineName": "United Airlines",
+            "airlineCode": "UA"
+        }
+    ],
+    "airportsDestination": [
+        {
+            "airportName": "Rio de Janeiro - Rio de Janeiro (GIG)",
+            "airportCode": "GIG"
+        },
+        {
+            "airportName": "Rio de Janeiro - Rio de Janeiro (SDU)",
+            "airportCode": "SDU"
+        }
+    ],
+    "airportsOrigin": [
+        {
+            "airportName": "Água Boa - Mato Grosso (HPX)",
+            "airportCode": "HPX"
+        },
+        {
+            "airportName": "Alegrete - Rio Grande do Sul (ALQ)",
+            "airportCode": "ALQ"
+        },
+        {
+            "airportName": "Alta Floresta - Mato Grosso (AFL)",
+            "airportCode": "AFL"
+        },
+        {
+            "airportName": "Altamira - Pará (ATM)",
+            "airportCode": "ATM"
+        },
+        {
+            "airportName": "Apucarana - Paraná (APU)",
+            "airportCode": "APU"
+        },
+        {
+            "airportName": "Aracaju - Sergipe (AJU)",
+            "airportCode": "AJU"
+        },
+        {
+            "airportName": "Araçatuba - São Paulo (ARU)",
+            "airportCode": "ARU"
+        },
+        {
+            "airportName": "Araguaína - Tocantins (AUX)",
+            "airportCode": "AUX"
+        },
+        {
+            "airportName": "Arapongas - Paraná (APX)",
+            "airportCode": "APX"
+        },
+        {
+            "airportName": "Arapoti - Paraná (AAG)",
+            "airportCode": "AAG"
+        },
+        {
+            "airportName": "Araraquara - São Paulo (AQA)",
+            "airportCode": "AQA"
+        },
+        {
+            "airportName": "Araxá - Minas Gerais (AAX)",
+            "airportCode": "AAX"
+        },
+        {
+            "airportName": "Arraias - Tocantins (AAI)",
+            "airportCode": "AAI"
+        },
+        {
+            "airportName": "Assis - São Paulo (AIF)",
+            "airportCode": "AIF"
+        },
+        {
+            "airportName": "Avaré / Arandu - São Paulo (QVP)",
+            "airportCode": "QVP"
+        },
+        {
+            "airportName": "Bagé - Rio Grande do Sul (BGX)",
+            "airportCode": "BGX"
+        },
+        {
+            "airportName": "Barcelos - Amazonas (BAZ)",
+            "airportCode": "BAZ"
+        },
+        {
+            "airportName": "Barra - Bahia (BQQ)",
+            "airportCode": "BQQ"
+        },
+        {
+            "airportName": "Barra do Garças - Mato Grosso (BPG)",
+            "airportCode": "BPG"
+        },
+        {
+            "airportName": "Barreiras - Bahia (BRA)",
+            "airportCode": "BRA"
+        },
+        {
+            "airportName": "Barreirinhas - Maranhão (BRB)",
+            "airportCode": "BRB"
+        },
+        {
+            "airportName": "Barretos - São Paulo (BAT)",
+            "airportCode": "BAT"
+        },
+        {
+            "airportName": "Bauru - São Paulo (BAU)",
+            "airportCode": "BAU"
+        },
+        {
+            "airportName": "Bauru / Arealva - São Paulo (JTC)",
+            "airportCode": "JTC"
+        },
+        {
+            "airportName": "Belém - Pará (BEL)",
+            "airportCode": "BEL"
+        },
+        {
+            "airportName": "Belo Horizonte - Minas Gerais (PLU)",
+            "airportCode": "PLU"
+        },
+        {
+            "airportName": "Belo Horizonte / Confins - Minas Gerais (CNF)",
+            "airportCode": "CNF"
+        },
+        {
+            "airportName": "Boa Vista - Roraima (BVB)",
+            "airportCode": "BVB"
+        },
+        {
+            "airportName": "Bom Jesus da Lapa - Bahia (LAZ)",
+            "airportCode": "LAZ"
+        },
+        {
+            "airportName": "Bonito - Mato Grosso do Sul (BYO)",
+            "airportCode": "BYO"
+        },
+        {
+            "airportName": "Borba - Amazonas (RBB)",
+            "airportCode": "RBB"
+        },
+        {
+            "airportName": "Bragança Paulista - São Paulo (BJP)",
+            "airportCode": "BJP"
+        },
+        {
+            "airportName": "Brasília - Federal District (BSB)",
+            "airportCode": "BSB"
+        },
+        {
+            "airportName": "Caçador - Santa Catarina (CFC)",
+            "airportCode": "CFC"
+        },
+        {
+            "airportName": "Cachoeiro de Itapemirim - Espírito Santo (CDI)",
+            "airportCode": "CDI"
+        },
+        {
+            "airportName": "Cacoal - Rondônia (OAL)",
+            "airportCode": "OAL"
+        },
+        {
+            "airportName": "Caldas Novas / Rio Quente - Goiás (CLV)",
+            "airportCode": "CLV"
+        },
+        {
+            "airportName": "Campina Grande - Paraíba (CPV)",
+            "airportCode": "CPV"
+        },
+        {
+            "airportName": "Campinas - São Paulo (VCP)",
+            "airportCode": "VCP"
+        },
+        {
+            "airportName": "Campo Grande - Mato Grosso do Sul (CGR)",
+            "airportCode": "CGR"
+        },
+        {
+            "airportName": "Carajás (Parauapebas) - Pará (CKS)",
+            "airportCode": "CKS"
+        },
+        {
+            "airportName": "Carauari - Amazonas (CAF)",
+            "airportCode": "CAF"
+        },
+        {
+            "airportName": "Caravelas - Bahia (CRQ)",
+            "airportCode": "CRQ"
+        },
+        {
+            "airportName": "Carolina - Maranhão (CLN)",
+            "airportCode": "CLN"
+        },
+        {
+            "airportName": "Caruaru - Pernambuco (CAU)",
+            "airportCode": "CAU"
+        },
+        {
+            "airportName": "Cascavel - Paraná (CAC)",
+            "airportCode": "CAC"
+        },
+        {
+            "airportName": "Caxias do Sul - Rio Grande do Sul (CXJ)",
+            "airportCode": "CXJ"
+        },
+        {
+            "airportName": "Chapecó - Santa Catarina (XAP)",
+            "airportCode": "XAP"
+        },
+        {
+            "airportName": "Coari - Amazonas (CIZ)",
+            "airportCode": "CIZ"
+        },
+        {
+            "airportName": "Conceição do Araguaia - Pará (CDJ)",
+            "airportCode": "CDJ"
+        },
+        {
+            "airportName": "Concórdia - Santa Catarina (CCI)",
+            "airportCode": "CCI"
+        },
+        {
+            "airportName": "Confresa - Mato Grosso (CFO)",
+            "airportCode": "CFO"
+        },
+        {
+            "airportName": "Cornélio Procópio - Paraná (CKO)",
+            "airportCode": "CKO"
+        },
+        {
+            "airportName": "Corumbá - Mato Grosso do Sul (CMG)",
+            "airportCode": "CMG"
+        },
+        {
+            "airportName": "Criciúma / Forquilhinha - Santa Catarina (CCM)",
+            "airportCode": "CCM"
+        },
+        {
+            "airportName": "Cruzeiro do Sul - Acre (CZS)",
+            "airportCode": "CZS"
+        },
+        {
+            "airportName": "Cuiabá / Várzea Grande - Mato Grosso (CGB)",
+            "airportCode": "CGB"
+        },
+        {
+            "airportName": "Curitiba - Paraná (BFH)",
+            "airportCode": "BFH"
+        },
+        {
+            "airportName": "Curitiba / São José dos Pinhais - Paraná (CWB)",
+            "airportCode": "CWB"
+        },
+        {
+            "airportName": "Diamantina - Minas Gerais (DTI)",
+            "airportCode": "DTI"
+        },
+        {
+            "airportName": "Divinópolis - Minas Gerais (DIQ)",
+            "airportCode": "DIQ"
+        },
+        {
+            "airportName": "Dourados - Mato Grosso do Sul (DOU)",
+            "airportCode": "DOU"
+        },
+        {
+            "airportName": "Eirunepé - Amazonas (ERN)",
+            "airportCode": "ERN"
+        },
+        {
+            "airportName": "Erechim - Rio Grande do Sul (ERM)",
+            "airportCode": "ERM"
+        },
+        {
+            "airportName": "Feijó - Acre (FEJ)",
+            "airportCode": "FEJ"
+        },
+        {
+            "airportName": "Feira de Santana - Bahia (FEC)",
+            "airportCode": "FEC"
+        },
+        {
+            "airportName": "Fernando de Noronha - Pernambuco (FEN)",
+            "airportCode": "FEN"
+        },
+        {
+            "airportName": "Florianópolis - Santa Catarina (FLN)",
+            "airportCode": "FLN"
+        },
+        {
+            "airportName": "Fonte Boa - Amazonas (FBA)",
+            "airportCode": "FBA"
+        },
+        {
+            "airportName": "Fortaleza - Ceará (FOR)",
+            "airportCode": "FOR"
+        },
+        {
+            "airportName": "Foz do Iguaçu - Paraná (IGU)",
+            "airportCode": "IGU"
+        },
+        {
+            "airportName": "Franca - São Paulo (FRC)",
+            "airportCode": "FRC"
+        },
+        {
+            "airportName": "Francisco Beltrão - Paraná (FBE)",
+            "airportCode": "FBE"
+        },
+        {
+            "airportName": "Goiânia - Goiás (GYN)",
+            "airportCode": "GYN"
+        },
+        {
+            "airportName": "Governador Valadares - Minas Gerais (GVR)",
+            "airportCode": "GVR"
+        },
+        {
+            "airportName": "Guanambi - Bahia (GNM)",
+            "airportCode": "GNM"
+        },
+        {
+            "airportName": "Guarapuava - Paraná (GPB)",
+            "airportCode": "GPB"
+        },
+        {
+            "airportName": "Gurupi - Tocantins (GRP)",
+            "airportCode": "GRP"
+        },
+        {
+            "airportName": "Humaitá - Amazonas (HUW)",
+            "airportCode": "HUW"
+        },
+        {
+            "airportName": "Ijuí - Rio Grande do Sul (IJU)",
+            "airportCode": "IJU"
+        },
+        {
+            "airportName": "Ilhéus - Bahia (IOS)",
+            "airportCode": "IOS"
+        },
+        {
+            "airportName": "Imperatriz - Maranhão (IMP)",
+            "airportCode": "IMP"
+        },
+        {
+            "airportName": "Ipatinga / Santana do Paraíso - Minas Gerais (IPN)",
+            "airportCode": "IPN"
+        },
+        {
+            "airportName": "Itaituba - Pará (ITB)",
+            "airportCode": "ITB"
+        },
+        {
+            "airportName": "Itumbiara - Goiás (ITR)",
+            "airportCode": "ITR"
+        },
+        {
+            "airportName": "Jaguaruna - Santa Catarina (JJG)",
+            "airportCode": "JJG"
+        },
+        {
+            "airportName": "Januária - Minas Gerais (JNA)",
+            "airportCode": "JNA"
+        },
+        {
+            "airportName": "Jijoca de Jericoacoara / Cruz - Ceará (JJD)",
+            "airportCode": "JJD"
+        },
+        {
+            "airportName": "Ji-Paraná - Rondônia (JPR)",
+            "airportCode": "JPR"
+        },
+        {
+            "airportName": "Joaçaba - Santa Catarina (JCB)",
+            "airportCode": "JCB"
+        },
+        {
+            "airportName": "João Pessoa / Bayeux - Paraíba (JPA)",
+            "airportCode": "JPA"
+        },
+        {
+            "airportName": "Joinville - Santa Catarina (JOI)",
+            "airportCode": "JOI"
+        },
+        {
+            "airportName": "Juara - Mato Grosso (JUA)",
+            "airportCode": "JUA"
+        },
+        {
+            "airportName": "Juazeiro do Norte - Ceará (JDO)",
+            "airportCode": "JDO"
+        },
+        {
+            "airportName": "Juína - Mato Grosso (JIA)",
+            "airportCode": "JIA"
+        },
+        {
+            "airportName": "Juiz de Fora - Minas Gerais (JDF)",
+            "airportCode": "JDF"
+        },
+        {
+            "airportName": "Juiz de Fora / Goianá - Minas Gerais (IZA)",
+            "airportCode": "IZA"
+        },
+        {
+            "airportName": "Juruena - Mato Grosso (JRN)",
+            "airportCode": "JRN"
+        },
+        {
+            "airportName": "Lábrea - Amazonas (LBR)",
+            "airportCode": "LBR"
+        },
+        {
+            "airportName": "Lages - Santa Catarina (LAJ)",
+            "airportCode": "LAJ"
+        },
+        {
+            "airportName": "Lençóis - Bahia (LEC)",
+            "airportCode": "LEC"
+        },
+        {
+            "airportName": "Lins - São Paulo (LIP)",
+            "airportCode": "LIP"
+        },
+        {
+            "airportName": "Londrina - Paraná (LDB)",
+            "airportCode": "LDB"
+        },
+        {
+            "airportName": "Lucas do Rio Verde - Mato Grosso (LVR)",
+            "airportCode": "LVR"
+        },
+        {
+            "airportName": "Macapá - Amapá (MCP)",
+            "airportCode": "MCP"
+        },
+        {
+            "airportName": "Maceió - Alagoas (MCZ)",
+            "airportCode": "MCZ"
+        },
+        {
+            "airportName": "Manaus - Amazonas (MAO)",
+            "airportCode": "MAO"
+        },
+        {
+            "airportName": "Manicoré - Amazonas (MNX)",
+            "airportCode": "MNX"
+        },
+        {
+            "airportName": "Marabá - Pará (MAB)",
+            "airportCode": "MAB"
+        },
+        {
+            "airportName": "Marília - São Paulo (MII)",
+            "airportCode": "MII"
+        },
+        {
+            "airportName": "Maringá - Paraná (MGF)",
+            "airportCode": "MGF"
+        },
+        {
+            "airportName": "Matupá - Mato Grosso (MBK)",
+            "airportCode": "MBK"
+        },
+        {
+            "airportName": "Maués - Amazonas (MBZ)",
+            "airportCode": "MBZ"
+        },
+        {
+            "airportName": "Minaçu - Goiás (MQH)",
+            "airportCode": "MQH"
+        },
+        {
+            "airportName": "Monte Dourado (Almeirim) - Pará (MEU)",
+            "airportCode": "MEU"
+        },
+        {
+            "airportName": "Montes Claros - Minas Gerais (MOC)",
+            "airportCode": "MOC"
+        },
+        {
+            "airportName": "Mossoró - Rio Grande do Norte (MVF)",
+            "airportCode": "MVF"
+        },
+        {
+            "airportName": "Natal / São Gonçalo do Amarante - Rio Grande do Norte (NAT)",
+            "airportCode": "NAT"
+        },
+        {
+            "airportName": "Navegantes - Santa Catarina (NVT)",
+            "airportCode": "NVT"
+        },
+        {
+            "airportName": "Novo Progresso - Pará (NPR)",
+            "airportCode": "NPR"
+        },
+        {
+            "airportName": "Oriximiná - Pará (ORX)",
+            "airportCode": "ORX"
+        },
+        {
+            "airportName": "Ourilândia do Norte - Pará (OIA)",
+            "airportCode": "OIA"
+        },
+        {
+            "airportName": "Ourinhos - São Paulo (OUS)",
+            "airportCode": "OUS"
+        },
+        {
+            "airportName": "Palmas - Tocantins (PMW)",
+            "airportCode": "PMW"
+        },
+        {
+            "airportName": "Paranaguá - Paraná (PNG)",
+            "airportCode": "PNG"
+        },
+        {
+            "airportName": "Paranavaí - Paraná (PVI)",
+            "airportCode": "PVI"
+        },
+        {
+            "airportName": "Parintins - Amazonas (PIN)",
+            "airportCode": "PIN"
+        },
+        {
+            "airportName": "Parnaíba - Piauí (PHB)",
+            "airportCode": "PHB"
+        },
+        {
+            "airportName": "Passo Fundo - Rio Grande do Sul (PFB)",
+            "airportCode": "PFB"
+        },
+        {
+            "airportName": "Pato Branco - Paraná (PTO)",
+            "airportCode": "PTO"
+        },
+        {
+            "airportName": "Patos de Minas - Minas Gerais (POJ)",
+            "airportCode": "POJ"
+        },
+        {
+            "airportName": "Paulo Afonso - Bahia (PAV)",
+            "airportCode": "PAV"
+        },
+        {
+            "airportName": "Pelotas - Rio Grande do Sul (PET)",
+            "airportCode": "PET"
+        },
+        {
+            "airportName": "Petrolina - Pernambuco (PNZ)",
+            "airportCode": "PNZ"
+        },
+        {
+            "airportName": "Picos - Piauí (PCS)",
+            "airportCode": "PCS"
+        },
+        {
+            "airportName": "Poços de Caldas - Minas Gerais (POO)",
+            "airportCode": "POO"
+        },
+        {
+            "airportName": "Ponta Grossa - Paraná (PGZ)",
+            "airportCode": "PGZ"
+        },
+        {
+            "airportName": "Ponta Porã - Mato Grosso do Sul (PMG)",
+            "airportCode": "PMG"
+        },
+        {
+            "airportName": "Porto Alegre - Rio Grande do Sul (POA)",
+            "airportCode": "POA"
+        },
+        {
+            "airportName": "Porto Nacional - Tocantins (PNB)",
+            "airportCode": "PNB"
+        },
+        {
+            "airportName": "Porto Seguro - Bahia (BPS)",
+            "airportCode": "BPS"
+        },
+        {
+            "airportName": "Porto de Trombetas (Oriximiná) - Pará (TMT)",
+            "airportCode": "TMT"
+        },
+        {
+            "airportName": "Porto Velho - Rondônia (PVH)",
+            "airportCode": "PVH"
+        },
+        {
+            "airportName": "Presidente Prudente - São Paulo (PPB)",
+            "airportCode": "PPB"
+        },
+        {
+            "airportName": "Recife - Pernambuco (REC)",
+            "airportCode": "REC"
+        },
+        {
+            "airportName": "Redenção - Pará (RDC)",
+            "airportCode": "RDC"
+        },
+        {
+            "airportName": "Ribeirão Preto - São Paulo (RAO)",
+            "airportCode": "RAO"
+        },
+        {
+            "airportName": "Rio Branco - Acre (RBR)",
+            "airportCode": "RBR"
+        },
+        {
+            "airportName": "Rio Grande - Rio Grande do Sul (RIG)",
+            "airportCode": "RIG"
+        },
+        {
+            "airportName": "Rio Verde - Goiás (RVD)",
+            "airportCode": "RVD"
+        },
+        {
+            "airportName": "Rondonópolis - Mato Grosso (ROO)",
+            "airportCode": "ROO"
+        },
+        {
+            "airportName": "Salvador da Bahia - Bahia (SSA)",
+            "airportCode": "SSA"
+        },
+        {
+            "airportName": "Santa Isabel do Rio Negro - Amazonas (IRZ)",
+            "airportCode": "IRZ"
+        },
+        {
+            "airportName": "Santa Maria - Rio Grande do Sul (RIA)",
+            "airportCode": "RIA"
+        },
+        {
+            "airportName": "Santa Rosa - Rio Grande do Sul (SRA)",
+            "airportCode": "SRA"
+        },
+        {
+            "airportName": "Santana do Araguaia - Pará (CMP)",
+            "airportCode": "CMP"
+        },
+        {
+            "airportName": "Santarém - Pará (STM)",
+            "airportCode": "STM"
+        },
+        {
+            "airportName": "Santo Ângelo - Rio Grande do Sul (GEL)",
+            "airportCode": "GEL"
+        },
+        {
+            "airportName": "Santo Antônio do Içá - Amazonas (IPG)",
+            "airportCode": "IPG"
+        },
+        {
+            "airportName": "São Carlos - São Paulo (QSC)",
+            "airportCode": "QSC"
+        },
+        {
+            "airportName": "São Félix do Araguaia - Mato Grosso (SXO)",
+            "airportCode": "SXO"
+        },
+        {
+            "airportName": "São Félix do Xingu - Pará (SXX)",
+            "airportCode": "SXX"
+        },
+        {
+            "airportName": "São Gabriel da Cachoeira - Amazonas (SJL)",
+            "airportCode": "SJL"
+        },
+        {
+            "airportName": "São João del-Rei - Minas Gerais (JDR)",
+            "airportCode": "JDR"
+        },
+        {
+            "airportName": "São José do Rio Preto - São Paulo (SJP)",
+            "airportCode": "SJP"
+        },
+        {
+            "airportName": "São José dos Campos - São Paulo (SJK)",
+            "airportCode": "SJK"
+        },
+        {
+            "airportName": "São Lourenço - Minas Gerais (SSO)",
+            "airportCode": "SSO"
+        },
+        {
+            "airportName": "São Luís - Maranhão (SLZ)",
+            "airportCode": "SLZ"
+        },
+        {
+            "airportName": "São Miguel do Oeste - Santa Catarina (SQX)",
+            "airportCode": "SQX"
+        },
+        {
+            "airportName": "São Paulo - São Paulo (CGH)",
+            "airportCode": "CGH"
+        },
+        {
+            "airportName": "São Paulo / Guarulhos - São Paulo (GRU)",
+            "airportCode": "GRU"
+        },
+        {
+            "airportName": "São Paulo de Olivença - Amazonas (OLC)",
+            "airportCode": "OLC"
+        },
+        {
+            "airportName": "Sinop - Mato Grosso (OPS)",
+            "airportCode": "OPS"
+        },
+        {
+            "airportName": "Sorocaba - São Paulo (SOD)",
+            "airportCode": "SOD"
+        },
+        {
+            "airportName": "Sorriso - Mato Grosso (SMT)",
+            "airportCode": "SMT"
+        },
+        {
+            "airportName": "Tabatinga - Amazonas (TBT)",
+            "airportCode": "TBT"
+        },
+        {
+            "airportName": "Tarauacá - Acre (TRQ)",
+            "airportCode": "TRQ"
+        },
+        {
+            "airportName": "Tefé - Amazonas (TFF)",
+            "airportCode": "TFF"
+        },
+        {
+            "airportName": "Teixeira de Freitas - Bahia (TXF)",
+            "airportCode": "TXF"
+        },
+        {
+            "airportName": "Telêmaco Borba - Paraná (TEC)",
+            "airportCode": "TEC"
+        },
+        {
+            "airportName": "Teresina - Piauí (THE)",
+            "airportCode": "THE"
+        },
+        {
+            "airportName": "Toledo - Paraná (TOW)",
+            "airportCode": "TOW"
+        },
+        {
+            "airportName": "Três Lagoas - Mato Grosso do Sul (TJL)",
+            "airportCode": "TJL"
+        },
+        {
+            "airportName": "Tucuruí - Pará (TUR)",
+            "airportCode": "TUR"
+        },
+        {
+            "airportName": "Uberaba - Minas Gerais (UBA)",
+            "airportCode": "UBA"
+        },
+        {
+            "airportName": "Uberlândia - Minas Gerais (UDI)",
+            "airportCode": "UDI"
+        },
+        {
+            "airportName": "Umuarama - Paraná (UMU)",
+            "airportCode": "UMU"
+        },
+        {
+            "airportName": "Una - Bahia (UNA)",
+            "airportCode": "UNA"
+        },
+        {
+            "airportName": "Uruguaiana - Rio Grande do Sul (URG)",
+            "airportCode": "URG"
+        },
+        {
+            "airportName": "Valença - Bahia (VAL)",
+            "airportCode": "VAL"
+        },
+        {
+            "airportName": "Varginha - Minas Gerais (VAG)",
+            "airportCode": "VAG"
+        },
+        {
+            "airportName": "Videira - Santa Catarina (VIA)",
+            "airportCode": "VIA"
+        },
+        {
+            "airportName": "Vilhena - Rondônia (BVH)",
+            "airportCode": "BVH"
+        },
+        {
+            "airportName": "Vitória - Espírito Santo (VIX)",
+            "airportCode": "VIX"
+        },
+        {
+            "airportName": "Vitória da Conquista - Bahia (VDC)",
+            "airportCode": "VDC"
+        },
+        {
+            "airportName": "Xinguara - Pará (XIG)",
+            "airportCode": "XIG"
+        },
+        {
+            "airportName": "Outros países (OOO)",
+            "airportCode": "OOO"
+        }
+    ]
+}
