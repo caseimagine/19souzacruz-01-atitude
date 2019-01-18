@@ -1,5 +1,31 @@
 <form name="vooForm" ng-submit="adicionaVoo(vooData)">
+
     <fieldset>
+
+        <h3 translate>Você já tem sua definição de transporte para o evento?</h3>
+
+        <div class="radio">
+        <label><input type="radio" name="dadosVooExistem" ng-model="dadosVooExistem" ng-value="true" required><strong>Sim</strong>, já tenho minha passagem emitida.</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="dadosVooExistem" ng-model="dadosVooExistem" ng-value="false" required><strong>Não</strong>, ainda não tenho minha passagem emitida.</label>
+    </div>
+
+    </fieldset>
+
+    <fieldset ng-show="dadosVooExistem !== undefined && !dadosVooExistem" style="margin-top: 30px;">
+
+        <div class="alert alert-info" role="alert">
+
+            <p>Por favor, retorne depois a essa página para inserir seus dados de transporte.</p>
+
+            <p>Você pode encontra-la no menu acima, no item "Inscrição".</p>
+
+        </div>
+
+    </fieldset>
+
+    <fieldset ng-show="dadosVooExistem">
 
         <h3 translate>Como será sua vinda para o evento?</h3>
 
@@ -12,7 +38,7 @@
             <div class="radio">
                 <label>
                     <input type="radio" name="VindaEvento" ng-model="vooData.InExist" ng-value="false" required>
-                    {{'Transporte terrestre' | translate}}</label>
+                    {{'Transporte terrestre' | translate}} / já estarei no Rio de Janeiro</label>
 
             </div>
             <span class="material-icons form-control-feedback">clear</span>
@@ -102,7 +128,7 @@
 
         <!-- volta -->
 
-        <h3 translate>Como será sua volta para o evento?</h3>
+        <h3 translate>Como será sua volta do evento?</h3>
 
         <div class="form-group " ng-class="{'has-error': vooForm.VoltaEvento.$invalid}">
             <div class="radio">
@@ -113,7 +139,7 @@
             <div class="radio">
                 <label>
                     <input type="radio" name="VoltaEvento" ng-model="vooData.OutExist" ng-value="false" required>
-                    {{'Transporte terrestre' | translate}}</label>
+                    {{'Transporte terrestre' | translate}} / ficarei no Rio de Janeiro</label>
 
             </div>
             <span class="material-icons form-control-feedback">clear</span>
@@ -199,6 +225,15 @@
 
         </div>
 
+        <div class="alert alert-info" role="alert">
+
+            <p>Após o envio, seus dados não poderão mais ser alterados pelo site.</p>
+
+            <p>Caso necessite altera-los posteriormente, por favor, entre em contato conosco.</p>
+    
+        </div>
+
+        <button type="submit" class="btn btn-primary"><span translate>Enviar</span></button>
+
     </fieldset>
-    <button type="submit" class="btn btn-primary"><span translate>Enviar</span></button>
 </form>
