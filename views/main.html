@@ -58,16 +58,12 @@
                         <button type="submit" href="#" class="btn btn-primary" ng-disabled="userForm.email.$invalid || !userForm.email.$viewValue">
                           <i class="material-icons fa-spin" ng-if="stateIsLoading">autorenew</i> Login</button>
                         <div class="alert alert-danger" ng-show="hasError">
-                          <span translate>{{errorMsg}}</span>
+                          <span translate>{{errorMsg | translate}}</span>
                         </div>
-                        <br>
-                        <br>
                         <a href="#" ng-show="grupo.loginPorSenha">
                           <small>Esqueci minha senha</small>
                         </a>
                         <hr />
-
-
                       </div>
                       <div class="col-xs-10 col-xs-offset-1">
                         <div ng-include="'/views/footer.html'"></div>

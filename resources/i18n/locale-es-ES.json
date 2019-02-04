@@ -12,6 +12,7 @@
     "controller.login.A senha deve ter no mínimo 6 caracteres": "Password must be at least 6 characters long",
     "controller.login.Este usuário já está cadastrado em nosso aplicativo": "Ops, seems like this user is already registered in our system",
     "controller.login.Usuário não aprovado/inexistente": "User not approved or inexistent",
+    "Mensagem de aviso de deadline": "Inscripciones cerradas",
 
     "Sim": "Si",
     "Não": "No",
